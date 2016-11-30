@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/application_background"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/rlheader" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical"
+            android:padding="10dp" >
+
+            <TextView
+                android:id="@+id/tvLoginInformation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="HOME"
+                android:textColor="@color/application_title_common_text"
+                android:textSize="20sp"
+                android:textStyle="normal"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/homeimage"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/home_top" />
+
+            <RelativeLayout
+                android:id="@+id/llOrderfood"
+                android:layout_width="fill_parent"
+                android:layout_height="62dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/radious_login"
+                android:onClick="OnOrderfood"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:id="@+id/imgorderfoodjk"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/application_title_common_text" >
+
+                    <ImageView
+                        android:id="@+id/ivC"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/orderfood" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/ivCustomerimage"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="ORDER FOOD"
+                    android:textColor="@color/application_title_common_text"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:id="@+id/ivCustomerimage1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/arrow" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/llTrackMyOrder"
+                android:layout_width="fill_parent"
+                android:layout_height="62dp"
+                android:layout_alignLeft="@+id/llOrderfood"
+                android:layout_below="@+id/llOrderfood"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/radious_login"
+                android:onClick="OnTrackMyOrder"
+                android:visibility="gone" >
+
+                <RelativeLayout
+                    android:id="@+id/imgordertrack"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/application_title_common_text" >
+
+                    <ImageView
+                        android:id="@+id/ivCfgh"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/track_my_order" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="TRACK MY ORDER"
+                    android:textColor="@color/application_title_common_text"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:id="@+id/inf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/arrow" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/llLoyaltyPoints"
+                android:layout_width="fill_parent"
+                android:layout_height="62dp"
+                android:layout_alignLeft="@+id/llTrackMyOrder"
+                android:layout_below="@+id/llTrackMyOrder"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/radious_login"
+                android:onClick="OnLoyaltyPoints"
+                android:orientation="horizontal"
+                 android:visibility="gone" >
+
+                <RelativeLayout
+                    android:id="@+id/imgordertrackdsf"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/application_title_common_text" >
+
+                    <ImageView
+                        android:id="@+id/ivCfghdf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/loyalty_points" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/k"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/arrow" />
+
+                <TextView
+                    android:id="@+id/textView1234"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="LOYALTY POINTS"
+                    android:textColor="@color/application_title_common_text"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/llBookaTable"
+                android:layout_width="fill_parent"
+                android:layout_height="62dp"
+                android:layout_alignLeft="@+id/llLoyaltyPoints"
+                android:layout_below="@+id/llLoyaltyPoints"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/radious_login"
+                android:onClick="OnBookaTable"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <RelativeLayout
+                    android:id="@+id/imgordertrackgdf"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/application_title_common_text" >
+
+                    <ImageView
+                        android:id="@+id/ivCfghfx"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/book_a_table" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/istomerimage1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/arrow" />
+
+                <TextView
+                    android:id="@+id/ivBookaTableq"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="BOOK A TABLE"
+                    android:textColor="@color/application_title_common_text"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/llSignIn"
+                android:layout_width="fill_parent"
+                android:layout_height="62dp"
+                android:layout_below="@id/llBookaTable"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/radious_login"
+                android:onClick="OnSignIn" >
+
+                <RelativeLayout
+                    android:id="@+id/imgotrack"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/application_title_common_text" >
+
+                    <ImageView
+                        android:id="@+id/i"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/signin" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/txtSignInf"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:text="SIGN IN / REGISTER"
+                    android:textColor="@color/application_title_common_text"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:id="@+id/erimage1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/arrow" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/llSignOut"
+                android:layout_width="fill_parent"
+                android:layout_height="62dp"
+                android:layout_alignLeft="@+id/llBookaTable"
+                android:layout_below="@id/llBookaTable"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/radious_login"
+                android:onClick="OnSignOut" >
+
+                <RelativeLayout
+                    android:id="@+id/imgotraclok"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/application_title_common_text" >
+
+                    <ImageView
+                        android:id="@+id/ijk"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/signin" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/iimage1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/arrow" />
+
+                <TextView
+                    android:id="@+id/txtSignIn"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="SIGN OUT"
+                    android:textColor="@color/application_title_common_text"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

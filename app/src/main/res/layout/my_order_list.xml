@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@color/application_background"
+    android:orientation="vertical" >
+ <TextView
+            android:id="@+id/myordertitle"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:padding="10dp"
+            android:layout_alignParentLeft="true"
+            android:text="MY ORDER"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/application_common_text"
+            android:textSize="20sp"
+            
+            />
+ <TextView
+            android:id="@+id/myOrderDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ertretret"
+            android:layout_toRightOf="@+id/myordertitle"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/application_title_common_text"
+            android:textSize="10sp"
+            android:visibility="gone"
+            />
+   
+ <Button
+        android:id="@+id/reorder"
+        android:layout_width="125dp"
+        android:layout_height="45dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/rlheader"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/round_color_bg"
+        android:onClick="onPlaceOrder"
+        android:text="RE-ORDER"
+        android:textColor="#ffffff"
+        android:textSize="15sp" >
+    </Button>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/myordertitle"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="0dp" >
+
+        <TextView
+            android:id="@+id/tvNoRecordFound"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:gravity="center"
+            android:text="No Records Found"
+            android:textColor="@color/application_top_header"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <ListView
+            android:id="@+id/my_order_list"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_weight="1"
+            android:animationCache="false"
+            android:descendantFocusability="beforeDescendants"
+            android:divider="@null"
+            android:dividerHeight="7.0sp"
+            android:scrollingCache="false"
+            android:smoothScrollbar="true" >
+        </ListView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <!-- <Button
+                android:id="@+id/addToFav"
+                android:layout_width="125dp"
+                android:layout_height="45dp"
+                android:layout_gravity="left"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/place_order"
+                android:text="Add To Favorite"
+                android:textColor="#ffffff"
+                android:textSize="15sp" >
+            </Button> -->
+
+            <Button
+                android:id="@+id/totalPrice"
+                android:layout_width="125dp"
+                android:layout_height="45dp"
+                android:layout_gravity="right"
+                android:background="@drawable/radious_login"
+                android:clickable="false"
+                android:text="Total £0.00"
+                android:textColor="@color/application_common_text"
+                android:textSize="15sp" >
+            </Button>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

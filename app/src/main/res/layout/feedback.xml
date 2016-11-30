@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/application_background"
+    android:orientation="vertical"
+    android:padding="0dp" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/rlheader" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/HeaderShow1"
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            android:padding="10dp" >
+
+            <TextView
+                android:id="@+id/tvFeedBackHeader"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left|center_vertical"
+                android:text="MY FEEDBACK"
+                android:textColor="@color/application_common_text"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tvSingleOrderDetail"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="left|center_vertical"
+                android:text=""
+                android:textColor="@color/application_common_text"
+                android:textSize="12sp" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rlfoodquality"
+                android:layout_gravity="center_horizontal"
+                android:padding="5dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tvfoodquality"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Quality Of Food"
+                    android:textColor="@color/ratting_color"
+                    android:textSize="12sp" />
+
+                <RatingBar
+                    android:id="@+id/foodqualityRating"
+                    style="@style/starRatingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="39dp"
+                    android:layout_below="@+id/tvfoodquality"
+                    android:numStars="5"
+                    android:stepSize="1.0" />
+            </RelativeLayout>
+              <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rlservice"
+                android:layout_gravity="center_horizontal"
+                android:padding="5dp"
+               
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tvservice"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Service"
+                    android:textColor="@color/ratting_color"
+                    android:textSize="12sp" />
+
+                <RatingBar
+                    android:id="@+id/serviceRating"
+                    style="@style/starRatingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="39dp"
+                    android:layout_below="@+id/tvservice"
+                    android:numStars="5"
+                    android:stepSize="1.0" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rldeliverytiming"
+                android:layout_gravity="center_horizontal"
+                android:padding="5dp"
+               
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tvdeliverytiming"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Delivery Timing"
+                    android:textColor="@color/ratting_color"
+                    android:textSize="12sp" />
+
+                <RatingBar
+                    android:id="@+id/deliverytimingRating"
+                    style="@style/starRatingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="39dp"
+                    android:layout_below="@+id/tvdeliverytiming"
+                    android:numStars="5"
+                    android:stepSize="1.0" />
+            </RelativeLayout>
+             <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rlvalueformoney"
+                android:layout_gravity="center_horizontal"
+                android:padding="5dp"
+               
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tvvalueformoney"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Delivery Timing"
+                    android:textColor="@color/ratting_color"
+                    android:textSize="12sp" />
+
+                <RatingBar
+                    android:id="@+id/valueformoneyRating"
+                    style="@style/starRatingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="39dp"
+                    android:layout_below="@+id/tvvalueformoney"
+                    android:numStars="5"
+                    android:stepSize="1.0" />
+            </RelativeLayout>
+            <EditText
+                android:id="@+id/etsuggestion"
+                android:layout_width="fill_parent"
+                android:layout_height="65dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/radious_login"
+                android:hint="Suggestion"
+                android:inputType="textPersonName"
+                android:maxLength="500"
+                android:paddingLeft="15dp"
+                android:textColor="@color/application_common_text"
+                android:textColorHint="@color/application_text_color_hint"
+                android:textCursorDrawable="@null"
+                android:textSize="15sp"
+                android:textStyle="normal" >
+            </EditText>
+            <Button
+            android:id="@+id/btnsubmitfeedback"
+            android:layout_width="125dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/round_color_bg"
+            android:onClick="onCustomerSignUp"
+            android:text="Submit"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/application_background" >
+
+    <RelativeLayout
+        android:id="@+id/rlheader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:background="#E4E4E4"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp" >
+
+        <TextView
+            android:id="@+id/tvFromAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="3dp"
+            android:layout_toRightOf="@+id/ivheadeimage"
+            android:textColor="@color/application_common_text"
+            android:textSize="12dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/to"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="3dp"
+            android:layout_toRightOf="@+id/tvFromAddress"
+            android:text="Date"
+            android:textColor="@color/application_common_text"
+            android:textSize="12dp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/tvtoAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="3dp"
+            android:layout_toRightOf="@+id/to"
+            android:textColor="@color/application_common_text"
+            android:textSize="12dp"
+            android:textStyle="bold" />
+
+    
+
+        <TextView
+            android:id="@+id/Details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toLeftOf="@+id/ivdetails"
+            android:text="Details"
+            android:textColor="@color/application_common_text"
+            android:textSize="22dp"
+            android:textStyle="normal" />
+
+        <ImageView
+            android:id="@+id/ivdetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/tvFromAddress"
+            android:layout_centerVertical="true"
+            android:background="@drawable/rightarrow"
+            android:paddingLeft="10dp"
+            android:textColor="#3399FF"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/tvWorkOrderStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/ivdetails"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:text="Approved"
+            
+            android:textColor="@color/application_common_text"
+            android:textSize="10dp"
+            android:textStyle="normal" />
+    </RelativeLayout>
+
+</RelativeLayout>

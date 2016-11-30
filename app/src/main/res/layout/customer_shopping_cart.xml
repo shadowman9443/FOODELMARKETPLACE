@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/application_background"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tvNoRecordFound"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:text="No Records Found"
+        android:textColor="@color/application_top_header"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+  <TextView
+        android:id="@+id/tvTotalAmount"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:text="tets"
+        android:textColor="@color/application_top_header"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="420dp" 
+        android:layout_marginTop="40dp"/>
+
+    <RelativeLayout
+        android:id="@+id/test"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/list"
+        android:orientation="horizontal"
+        android:weightSum="2" >
+
+        <EditText
+            android:id="@+id/etComments"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/inputbox_bg"
+            android:hint="Comment"
+            android:inputType="textMultiLine"
+            android:maxLength="500"
+            android:textColor="#000000"
+            android:textCursorDrawable="@null"
+            android:textSize="12sp"
+            android:textStyle="normal" >
+        </EditText>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/lvCountryCode"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/test"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:weightSum="2" >
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="#836F6F"
+            android:onClick="onPlaceOrder"
+            android:text="Place Order"
+            android:textColor="#FFFFFF"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="#836F6F"
+            android:onClick="onCancel"
+            android:text="Cancel"
+            android:textColor="#FFFFFF"
+            android:textSize="18dp" />
+    </LinearLayout>
+
+</RelativeLayout>

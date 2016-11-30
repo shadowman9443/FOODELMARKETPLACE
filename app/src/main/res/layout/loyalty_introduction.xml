@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/application_background"
+    android:orientation="vertical"
+    android:padding="15dp" >
+
+    <TextView
+        android:id="@+id/loyaltyintrotitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rlheader"
+        android:layout_marginTop="10dp"
+        android:gravity="left"
+        android:text="@string/loyaltypointsintroductiontitle"
+        android:textColor="@color/application_common_text"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/loyaltyintrodesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loyaltyintrotitle"
+        android:layout_marginTop="10dp"
+        android:text="@string/loyaltypointsintroduction"
+        android:textColor="@color/application_common_text"
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/footer"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/loyaltycalendar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/calender_new"
+            android:onClick="OnPressloyaltyCalendar" />
+
+        <ImageView
+            android:id="@+id/loyaltystar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/star_new"
+            android:onClick="OnPressloyaltystar" />
+
+        <ImageView
+            android:id="@+id/loyaltyquestion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/question_new_red"
+            android:onClick="OnPressloyaltyQuestion" />
+    </LinearLayout>
+
+</RelativeLayout>

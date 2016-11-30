@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/application_background"
+    android:orientation="vertical" >
+       <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+           
+            android:padding="10dp" >
+		
+           
+	<TextView
+         android:id="@+id/feedbackText"
+        
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="MY FEEDBACK"
+                android:textSize="20sp"
+                android:textColor="@color/application_common_text"
+                
+               />
+            <ListView
+                android:id="@+id/myfeedback_list"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true"
+                android:smoothScrollbar="true"
+    			android:scrollingCache="false"
+    			android:animationCache="false"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="2dp"
+                android:divider="@null"
+                android:dividerHeight="7.0sp" >
+            </ListView>
+        </LinearLayout>
+   
+
+</RelativeLayout>

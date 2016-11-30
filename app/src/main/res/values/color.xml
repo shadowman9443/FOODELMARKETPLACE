@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="list_diverder">#aeaeae</color>
+    <color name="transparent_20">#65000000</color>
+    <color name="application_top_header">#00285E</color>
+    <color name="application_top_header_title_text">#FFFFFF</color>
+    <color name="application_background">#FFFFFF</color>
+    <color name="blue">#3F48CC</color>
+    <color name="home_menu_item_text_color">#00285E</color>
+    <color name="header_text">#FFC000</color>
+    <color name="value_text">#00B050</color>
+    <color name="footer_notecolor">#FF003A</color>
+    <color name="selected_tab">#F48540</color>
+    <color name="unselected_tab">#4D78CA</color>
+    <color name="text_background_color">#70AD47</color>
+    <color name="tab_bg_normal">#557DCB</color>
+    <color name="sub_tab_bg_normal">#70AD47</color>
+    <color name="tab_bg_selected">#F4823B</color>
+    <color name="list_item_normal">#00FFFFFF</color>
+    <color name="list_item_selected">#9FACACAC</color>
+    <color name="application_common_text">#6d6e70</color>
+    <color name="application_common_text_button_inner">#ffffff</color>
+    <color name="application_common_text_point">#EF3F3F</color>
+    <color name="application_title_common_text">#8B8052</color>
+    <color name="application_edit_text_list">#8B8052</color>
+    <color name="pager_seleted">#d1d1d1</color>
+    <color name="pager_normal">#e1e1e1</color>
+    <color name="collarboration_list_diverder">#C0C0C0</color>
+    <color name="collarboration_footer_color">#1F1F1F</color>
+    <color name="bottom_text_color">#ffffff</color>
+    <color name="white">#ffffff</color>
+    <color name="tabTextColor">#ffffff</color>
+    <color name="profileHeadertextColor">#FFFFFF</color>
+    <color name="profileBackgroundColor">#00B050</color>
+    <color name="EditText">#E6E6E6</color>
+    <color name="genre">#666666</color>
+    <color name="year">#888888</color>
+    <color name="orderdetails">#4D4D4E</color>
+    <color name="list_divider">#d9d9d9</color>
+    <color name="list_row_start_color">#ffffff</color>
+    <color name="list_row_end_color">#ffffff</color>
+    <color name="list_row_hover_start_color">#ebeef0</color>
+    <color name="list_row_hover_end_color">#ebeef0</color>
+    <color name="text_color">#BDBDBD</color>
+    <color name="new_text_color">#989898</color>
+    <color name="application_text_color_hint">#afafaf</color>
+    <color name="order_details_selected">#DFE0E1</color>
+    <color name="color_accent">#4CAF50</color>
+    <color name="order_details_non_selected">#FFFFFF</color>
+
+    <color name="ratting_color">#8B8052</color>
+
+    <color name="grey">#FF909090</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+</resources>

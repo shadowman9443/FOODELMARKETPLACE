@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Foodel Marketplace</string>
+    <string name="home_menu">Home</string>
+    <string name="fb_app_id">1619931464965626</string>
+    <string name="logout_menu">Logout</string>
+    <string name="pound">£</string>
+    <string name="pound_withzero">£\n0.00</string>
+    <string name="menu_AddProfile">AddProfile</string>
+    <string name="CustomerNo">CustomerNo</string>
+    <string name="ORDERACCEPTED">Thank you for your order. We have received this and our chefs will soon begin cooking your order</string>
+    <string name="ORDERPREPARED">Our chefs have now completed cooking your order.  Your order will be dispatched soon. </string>
+    <string name="ORDERENROUTE">Your order is now en-route.  Your delivery driver has now collected your order and they are now on they’re way to you.</string>
+    <string name="ORDERARRIVED">Your order is now en-route.  Your delivery driver has now collected your order and they are now on they’re way to you.</string>
+    <string name="ORDERDELIVERED">Your driver has confirmed your ordwer has been successfully delivered to you. 
+We hope you enjoy your meal. Please do not forget to leave a review.  
+</string>
+    <string name="CreateAccount">CREATE AN ACCOUNT</string>
+    <string name="BookTable">BOOK A TABLE</string>
+    <string name="MyDetails">MY DETAILS</string>
+    <string name="ReserveConrm">RESERVATION CONFIRMATION</string>
+    <string name="Orderhistory">ORDER HISTORY</string>
+    <string name="Trackorderhistory">TRACK ORDER HISTORY</string>
+    <string name="ReserveConrmfation">Thank you on your table reservation</string>
+    <string name="FaceBookNotification">Click to tell your friend now</string>
+    <string name="OrderConrm">ORDER CONFIRMATION</string>
+    <string name="OrderConfirmation">Thank you for your order</string>
+    <string name="Footer">If you need to change anything on your order please call us &amp; quote your name</string>
+    <string name="BookreservationFooter">Thank you for your table reservation</string>
+    <string name="FirstName">FirstName</string>
+    <string name="MiddleName">MiddleName</string>
+    <string name="LastName">LastName</string>
+    <string name="MobileNo">MobileNo</string>
+    <string name="Email">Email</string>
+    <string name="AddressLine1">AddressLine1</string>
+    <string name="AddressLine2">AddressLine2</string>
+    <string name="PostCode">PostCode</string>
+    <string name="CityID">CityID</string>
+    <string name="CountryID">CountryID</string>
+    <string name="FamilySize">FamilySize</string>
+    <string name="PaymentPreferenceID">Payment Preference</string>
+    <string name="QuotePreferenceID">Quote Preference</string>
+    <string name="IsSMSPreference">SMS Preference</string>
+    <string name="ReceptEmail">Recept Email</string>
+    <string name="KeepHistory">Keep History</string>
+    <string name="LastLatitude">Last Latitude</string>
+    <string name="LastLongitude">Last Longitude</string>
+    <string name="Menu_ChangePin">Change Pin</string>
+    <string name="Menu_JobHistory">Work Order List</string>
+    <string name="Menu_JobQuote">Product View</string>
+    <string name="Menu_JobQuoteList">Job Quote List</string>
+    <string name="JobQuoteCode">Job Quote Code</string>
+    <string name="CustomerID">Customer</string>
+    <string name="JobDate">Job Date</string>
+    <string name="FromAddress">From Address</string>
+    <string name="FromPostcode">From Postcode</string>
+    <string name="ToAddress">To Address</string>
+    <string name="Proceedgust">Proceed\nas a guest</string>
+    <string name="ToPostcode">To Postcode</string>
+    <string name="Via">Via</string>
+    <string name="ViaPostcode">Via Postcode</string>
+    <string name="Distance">Distance</string>
+    <string name="Cost">Cost</string>
+    <string name="CurrencyID">Currency</string>
+    <string name="JobStatusID">Job Status</string>
+    <string name="PassengerNo">Passenger No</string>
+    <string name="Lagguage">Lagguage</string>
+    <string name="ChildSeat">Child Seat</string>
+    <string name="VehicleTypeID">Vehicle Type</string>
+    <string name="Menu_NearBy">My Cart</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="date_label_set">Press the button to set the date</string>
+    <string name="date_button_set">Set Date</string>
+    <string name="date_view_set">The Date is: </string>
+    <string name="date_selected"></string>
+    <string name="image">Image thumbnail</string>
+    <string name="timer">00:00:00</string>
+    <string name="timerMs">.0</string>
+    <string name="startText">start</string>
+    <string name="resetText">reset</string>
+    <string name="stopText">stop</string>
+    <string name="backgroundText">Stopwatch</string>
+    <string name="adsText">Ads Go Here</string>
+    <string name="yourdetails">YOUR DETAILS</string>
+
+
+
+ <!--   start for FODDEL MARKETPLACE-->
+
+
+    <string name="find_place">FIND PLACES</string>
+
+    <string-array name="fruit_array">
+        <item>Apple</item>
+        <item>Banana</item>
+        <item>Mango</item>
+        <item>Grapes</item>
+        <item>Orange</item>
+        <item>Strawberry</item>
+        <item>Peach</item>
+    </string-array>
+    <string-array name="PaymentPreference">
+        <item>Cash</item>
+        <item>Card</item>
+        <item>Paypal</item>
+        <item>Prepaid Accont</item>
+    </string-array>
+    <string-array name="QuotationPreference">
+        <item>Cheapest 1st</item>
+        <item>Earliest/Quickest 1st</item>
+        <item>Top Rated 1st</item>
+        <item>Expensive 1st</item>
+    </string-array>
+    <string-array name="VehicleType">
+        <item>Sedan</item>
+        <item>7 seater</item>
+        <item>SUV</item>
+        <item>7+seater</item>
+    </string-array>
+    <string-array name="SpicyLevel">
+        <item>Mild</item>
+        <item>Medium</item>
+        <item>Hot</item>
+        <item>Extra Hot</item>
+    </string-array>
+    <string-array name="Deliveryby">
+        <item>30 min</item>
+        <item>1 hour</item>
+        <item>2 hour</item>
+        <item>3 hour</item>
+    </string-array>
+
+    <string name="Salutation">Select </string>
+
+    <string-array name="Salutation">
+        <item>(Select country)</item>
+        <item>Mr.</item>
+        <item>Mrs.</item>
+        <item>Miss.</item>
+        <item>Ms.</item>
+        <item>Dr.</item>
+    </string-array>
+
+    <string name="loyaltypointshistory">LOYALTY POINTS HISTORY</string>
+    <string name="loyaltypointsintroductiontitle">INTRODUCING SUKOTHAI RESTAURANTLOYALTY SCHEME</string>
+    <string name="loyaltypointsintroduction">Join SUKOTHAI RESTAURANT popular loyalty programme, and it\'s free to join. You can collect points from every single time you order a take away through this app.\n
+        \nCollect points and redeem them agaist your order at any time you please. In additon to this each time you reach a milestone you\'ll, also, receive free items and dishes along te way</string>
+    <string name="spinner_prompt">Choose your Title</string>
+    <string name="about_us">Treat yourself to a meal from Sukhothai tonight and order online for collection using our mobile app or through our website. Sukhothai is a takeaway located on 50 High Street, Great Missenden, Buckinghamshire, and offering a wide range of dishes such as Mussels, Duck or Thai Curries. Take a look at our menu and choose a favourite. /n/n Order your take away, track your orders, earn loyalty points and benefit from great offers and discounts just search for the Sukhothai mobile app on Google Playstore and Apples Appstore. Dont forget to let us know if you enjoyed your meal by leaving feedback. Bon appetite!</string>
+    <string name="tell_a_friend_mail">Hey.\n\nYou should check out SUKOTHAI.
+    \n\nDelicious Thai food made to order with a free delivery service. They have a cool mobile app for online\n 
+    ordering with some really great features like loyalty points, live tracking, online discounts and you received\n 
+    a £10 voucher just for reffering your friends
+</string>
+ <string name="tell_a_friend_afterend"> family.\n\nYou can download the app by searching for SUKOTHAI RESTAURANT on Google Playstore or Apples Appstore.\n\n
+    Enjoy.
+</string>
+    <string name="guest">To track your order, view order history earn loyalty points and get special offers
+please enter a password for future use. It’s simple and take seconds. 
+If you prefer not to, then simply proceed as a guest user.</string>
+    <string name="simple_header">Simple Spinner</string>
+    <string name="custom_list_header">Custom list Spinner</string>
+    <string name="selection_header">Selection Spinner</string>
+
+    <string-array name="cities_array">
+        <item>Mr.</item>
+        <item>Mrs.</item>
+        <item>Miss.</item>
+        <item>Ms.</item>
+        <item>Dr.</item>
+    </string-array>
+
+
+    <string name="tell_a_friend">Tell a friend and share the love.\n
+    \nWe would love for u to tell your friends and family about our app. Just click the button below to send a text or an email.\n
+    \nWhen they place their first order you will both receive a £5 voucher to use against your next order.\n
+    \nTell as many friends as you like and earn £5 every time they place their first order.
+</string>
+    <string name="text_email_twitter">Hi,\n\nYou should check out SUKOTHAI RESTAURANT. Delicious Thai\n
+    \n food made to order with a free delivery service. They
+    \nThey have a cool app for online ordering with some really great features.\n
+    
+    \n have a cool app for online ordering with some really
+   
+</string>
+    <string name="already_registered">Device is already registered on server.</string>
+    <string name="gcm_registered">From GCM: device successfully registered!</string>
+    <string name="gcm_unregistered">From GCM: device successfully unregistered!</string>
+    <string name="gcm_message">From GCM: you got message!</string>
+    <string name="gcm_error">From GCM: error (%1$s).</string>
+    <string name="gcm_recoverable_error">From GCM: recoverable error (%1$s).</string>
+    <string name="gcm_deleted">From GCM: server deleted %1$d pending messages!</string>
+    <string name="server_registering">Trying (attempt %1$d/%2$d) to register device on Demo Server.</string>
+    <string name="server_registered">From Demo Server: successfully added device!</string>
+    <string name="server_unregistered">From Demo Server: successfully removed device!</string>
+    <string name="server_register_error">Could not register device on Demo Server after %1$d attempts.</string>
+    <string name="server_unregister_error">Could not unregister device on Demo Server (%1$s).</string>
+
+</resources>

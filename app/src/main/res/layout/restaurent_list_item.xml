@@ -1,0 +1,171 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="#FFFFFF">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imagerel"
+        android:padding="10dp">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:padding="7dp"
+
+            android:background="@drawable/round"
+            >
+
+
+            <ImageView
+                android:id="@+id/imageId"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:padding="4dp"
+                android:src="@drawable/accheckbox" />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:layout_toRightOf="@+id/imagerel"
+        android:orientation="vertical"
+        android:id="@+id/restNameRel"
+       >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13dp"
+            android:text="Bangkok Eatery"
+            android:layout_marginTop="3dp"
+            android:textColor="#000"
+            android:id="@+id/bangEat"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thai"
+            android:textSize="10sp"
+            android:textColor="#939393"
+            android:layout_marginTop="8dp"
+            android:layout_below="@+id/bangEat"
+            android:id="@+id/placeName"
+        />
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/placeName"
+            android:layout_marginTop="10dp">
+            <RatingBar
+                android:id="@+id/valueformoneyRating"
+                style="@style/starRatingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="9.5dp"
+                android:numStars="5"
+                android:stepSize=".50"
+
+               />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/valueformoneyRating"
+                android:id="@+id/txtreview"
+                android:textColor="#939393"
+                android:textSize="10sp"
+                android:paddingLeft="3dp"
+                android:text="56 Reviews"
+
+                />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/restNameRel"
+        android:id="@+id/linrev"
+        android:padding="8dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/relDesc"
+            android:layout_marginTop="1dp"
+
+            android:layout_gravity="right"
+            >
+            <ImageView
+                android:id="@+id/imageBike"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/bike"
+                android:padding="1dp"
+                />
+            <ImageView
+                android:id="@+id/imagehalal"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+
+                android:padding="1dp"
+                android:src="@drawable/halal"
+                />
+            <ImageView
+                android:id="@+id/imageStar"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:padding="1dp"
+                android:src="@drawable/star" />
+            <ImageView
+                android:id="@+id/imagechtb"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:padding="1dp"
+                android:src="@drawable/chtb" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:id="@+id/reviewRel"
+            android:weightSum="1"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                android:text="1.2 Mile"
+                android:textColor="#939393"
+                android:layout_marginLeft="50dp"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/linrev"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+       >
+        <TextView
+            android:layout_width="7dp"
+            android:layout_height="14dp"
+            android:background="@drawable/ico_arrow_right"
+            android:layout_centerInParent="true"
+            android:id="@+id/imgArrow"
+            android:layout_alignParentRight="true" />
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

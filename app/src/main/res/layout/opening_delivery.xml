@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/application_background"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="10dp"
+             >
+
+            <TextView
+                android:id="@+id/openingDeliveryTimes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:text="OPENING &amp; DELIVERY TIMES"
+                android:textColor="@color/application_common_text"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="100dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/single_item_box"
+                android:orientation="vertical" >
+
+                <TableLayout
+                    android:id="@+id/tableLayout1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                     >
+
+                    <TableRow
+                        android:id="@+id/titleRow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dip" >
+
+                        <TextView
+                            android:id="@+id/blankText"
+                            android:layout_marginLeft="5dp"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textColor="@color/application_title_common_text"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/lunch"
+                            android:layout_marginLeft="20dp"
+                            android:text="LUNCH"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textColor="@color/application_title_common_text"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/dinner"
+                            android:layout_marginLeft="20dp"
+                            android:text="DINNER"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textColor="@color/application_title_common_text"
+                            android:textSize="15sp" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/mondayRow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dip" >
+
+                        <TextView
+                            android:layout_marginLeft="5dp"
+                            android:text="MON"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textColor="@color/application_title_common_text"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/mondayLunch"
+                            android:layout_marginLeft="20dp"
+                            android:text="CLOSED"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textColor="@color/application_common_text"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/mondayDinner"
+                            android:layout_marginLeft="20dp"
+                            android:text="CLOSED"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textColor="@color/application_common_text"
+                            android:textSize="15sp" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tuesdayRow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dip" >
+
+                        <TextView
+                            android:layout_marginLeft="5dp"
+                            android:text="TUE"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textColor="@color/application_title_common_text"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/tuesdayLunch"
+                            android:layout_marginLeft="20dp"
+                            android:text="12:00 - 14:30"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textColor="@color/application_common_text"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/tuesdayDinner"
+                            android:layout_marginLeft="20dp"
+                            android:text="17:30 - 22:30"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textColor="@color/application_common_text"
+                            android:textSize="15sp" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/wednesdayRow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dip" >
+
+                        <TextView
+                            android:layout_marginLeft="5dp"
+                            android:text="WED"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textColor="@color/application_title_common_text"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/wednesdayLunch"
+                            android:layout_marginLeft="20dp"
+                            android:text="12:00 - 14:30"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textColor="@color/application_common_text"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/wednesdayDinner"
+                            android:layout_marginLeft="20dp"
+                            android:text="17:30 - 22:30"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textColor="@color/application_common_text"
+                            android:textSize="15sp" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/thursdayRow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dip" >
+
+                        <TextView
+                            android:layout_marginLeft="5dp"
+                            android:text="THUR"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textColor="@color/application_title_common_text"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/thursdayLunch"
+                            android:layout_marginLeft="20dp"
+                            android:text="12:00 - 14:30"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textColor="@color/application_common_text"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/thursdayDinner"
+                            android:layout_marginLeft="20dp"
+                            android:text="17:30 - 22:30"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textColor="@color/application_common_text"
+                            android:textSize="15sp" />
+                    </TableRow>
+					
+                    <TableRow
+                        android:id="@+id/fridayRow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dip" >
+
+                        <TextView
+                            android:layout_marginLeft="5dp"
+                            android:text="FRI"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textColor="@color/application_title_common_text"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/fridayLunch"
+                            android:layout_marginLeft="20dp"
+                            android:text="12:00 - 14:30"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textColor="@color/application_common_text"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/fridayDinner"
+                            android:layout_marginLeft="20dp"
+                            android:text="17:30 - 22:30"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textColor="@color/application_common_text"
+                            android:textSize="15sp" />
+                    </TableRow>
+					
+                    <TableRow
+                        android:id="@+id/saturdayRow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dip" >
+
+                        <TextView
+                            android:layout_marginLeft="5dp"
+                            android:text="SAT"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textColor="@color/application_title_common_text"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/saturdayLunch"
+                            android:layout_marginLeft="20dp"
+                            android:text="12:00 - 14:30"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textColor="@color/application_common_text"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/saturdayDinner"
+                            android:layout_marginLeft="20dp"
+                            android:text="17:30 - 22:30"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textColor="@color/application_common_text"
+                            android:textSize="15sp" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/sundayRow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dip" >
+
+                        <TextView
+                            android:layout_marginLeft="5dp"
+                            android:text="SUN"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textColor="@color/application_title_common_text"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/sundayLunch"
+                            android:layout_marginLeft="20dp"
+                            android:text="12:00 - 14:30"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textColor="@color/application_common_text"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/sundayDinner"
+                            android:layout_marginLeft="20dp"
+                            android:text="17:30 - 22:30"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textColor="@color/application_common_text"
+                            android:textSize="15sp" />
+                    </TableRow>
+                </TableLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/footer"
+                    android:layout_alignParentBottom="true"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="15dp"
+                    android:layout_marginBottom="15dp" >
+
+                    <ImageView
+                        android:id="@+id/orderFoodBtn"
+                         android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/order_food"
+                        android:onClick="OnOrderFood" />
+
+                    <ImageView
+                        android:id="@+id/imgtablebook"
+                         android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/orderFoodBtn"
+                        android:layout_weight="1"
+                        android:background="@drawable/book_a_table_btn"
+                        android:onClick="OnBookTable"
+                        android:visibility="gone"/>
+
+                    <ImageView
+                        android:id="@+id/callUsBtn"
+                          android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_below="@+id/orderFoodBtn"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/call_us"
+                        android:onClick="OnCallUS" />
+
+                    <ImageView
+                        android:id="@+id/mailUsBtn"
+                         android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_below="@+id/bookTableBtn"
+                        android:layout_marginLeft="10dp"
+
+                        android:layout_toRightOf="@+id/callUsBtn"
+                        android:layout_weight="1"
+                        android:background="@drawable/mail_us"
+                        android:onClick="OnMailUs" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

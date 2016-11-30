@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="25dp"
+    android:background="@drawable/radious_login"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/llloyalty"
+        android:layout_width="fill_parent"
+        android:layout_height="64dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:weightSum="3" >
+
+        <TextView
+            android:id="@+id/loyaltyDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.01"
+            android:gravity="left"
+            android:textColor="@color/application_common_text"
+            android:text="date"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/loyaltyTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.63"
+              android:textColor="@color/application_common_text"
+            android:text="time"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/loyaltyPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+              android:textColor="@color/application_common_text"
+            android:layout_weight="0.63"
+            android:text="price"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:id="@+id/llloyaltyPoints"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            
+            android:layout_weight="0.4"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/loyaltypoints"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="25"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/application_common_text_point"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/loyaltypointstext"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_horizontal"
+                           android:textColor="@color/application_common_text_point"
+                android:text="points"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

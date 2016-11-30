@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="25dp"
+    android:background="@drawable/radious_login"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/llfeedbackitem"
+        android:layout_width="fill_parent"
+        android:layout_height="64dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:weightSum="5" >
+
+        <TextView
+            android:id="@+id/feedBackDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:gravity="left"
+            android:textColor="@color/application_common_text"
+            android:text="date"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/feedBackTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:text="time"
+            android:textColor="@color/application_common_text"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/feedBackPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/application_common_text"
+            android:layout_weight="1"
+            android:text="price"
+            android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/feedBackCircle"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/round_bk_1"
+                
+                 />
+
+            <TextView
+                android:id="@+id/feedBackArrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" 
+                android:background="@drawable/arrow"
+                android:layout_marginLeft="10dp"
+                 />
+    </LinearLayout>
+
+</RelativeLayout>

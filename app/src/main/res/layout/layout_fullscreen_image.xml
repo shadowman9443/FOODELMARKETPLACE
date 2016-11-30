@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/EditText" >
+
+    <TextView
+        android:id="@+id/offer_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#807f7f"
+        android:padding="10dp"
+        android:text="Free Botle of wine"
+        android:textColor="#FFFFFF" />
+
+    <ImageView
+        android:id="@+id/imgDisplay"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/offer_desc"
+        android:layout_alignParentTop="true"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/offer_desc"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/order_tc"
+        android:background="#979797"
+        android:padding="10dp"
+        android:maxLines="3"
+        android:text="Free Botle of wine Free Botle of wine Free Botle of wine Free Botle of wine"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/order_tc"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#807f7f"
+        android:maxLines="3"
+        android:padding="10dp"
+        android:text="Free Botle of wine Free Botle of wine Free Botle of wine Free Botle of wine Free Botle of wine Free Botle of wine Free Botle of wine Free Botle of wine Free Botle of wine Free Botle of wine Free Botle of wine Free Botle of wine"
+        android:textColor="@color/white"
+        android:textSize="10sp" />
+
+</RelativeLayout>

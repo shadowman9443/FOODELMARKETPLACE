@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/application_background"
+    android:orientation="vertical" >
+    <TextView
+         android:id="@+id/feedbackText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="MY FAVOURITES"
+                android:textSize="20sp"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/application_common_text"
+               />
+	<Button
+        android:id="@+id/placeOrder"
+        android:layout_width="125dp"
+        android:layout_height="45dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/rlheader"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/round_color_bg"
+        android:onClick="onPlaceOrder"
+        android:text="PLACE ORDER"
+        android:textColor="#ffffff"
+        android:textSize="15sp" >
+    </Button>
+       <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"
+            android:orientation="vertical"   
+            android:layout_below="@+id/placeOrder"
+            android:padding="10dp" >
+            <ListView
+                android:id="@+id/favorite_list"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true"
+                android:smoothScrollbar="true"
+    			android:scrollingCache="false"
+    			android:animationCache="false"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:divider="@null"
+                android:dividerHeight="7.0sp" >
+            </ListView>
+        </LinearLayout>
+</RelativeLayout>

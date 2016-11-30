@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/application_background"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/rlheader" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            android:padding="15dp" >
+
+            <TextView
+                android:id="@+id/textView1t"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TRACK MY ORDER"
+                android:textColor="@color/application_common_text"
+                android:textSize="20sp" />
+
+            <RelativeLayout
+                android:id="@+id/llOrderRecieved"
+                android:layout_width="fill_parent"
+                android:layout_height="64dp"
+                android:layout_below="@+id/textView1t"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/radious_login" >
+
+                <ImageView
+                    android:id="@+id/ivOrderAcceptedwithouttick"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="2dp"
+                    android:src="@drawable/withiout_tick" />
+
+                <TextView
+                    android:id="@+id/txttimeorderaccepted"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/ivOrderAcceptedwithouttick"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_toLeftOf="@+id/ivOrderAcceptedwithouttick"
+                    android:text=""
+                    android:textColor="@color/application_common_text"
+                    android:textSize="15sp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="left"
+                    android:text="ORDER ACCEPTED"
+                    android:textColor="@color/application_common_text"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/llBeingcooked"
+                android:layout_width="fill_parent"
+                android:layout_height="64dp"
+                android:layout_alignLeft="@+id/llOrderRecieved"
+                android:layout_below="@+id/llOrderRecieved"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/radious_login" >
+
+                <ImageView
+                    android:id="@+id/ivOrderPreparedwithouttick"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignTop="@+id/textView12"
+                    android:layout_marginLeft="2dp"
+                    android:src="@drawable/withiout_tick" />
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="ORDER PREPARED"
+                    android:textColor="@color/application_common_text"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/ivOrderPreparedwithouttick"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="3dp"
+                    android:layout_toLeftOf="@+id/ivOrderPreparedwithouttick"
+                    android:text=""
+                    android:textColor="@color/application_common_text"
+                    android:textSize="15sp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/llCookingFinished"
+                android:layout_width="fill_parent"
+                android:layout_height="64dp"
+                android:layout_alignLeft="@+id/llBeingcooked"
+                android:layout_below="@+id/llBeingcooked"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/radious_login" >
+
+                <ImageView
+                    android:id="@+id/ivOrderEnroute"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignTop="@+id/textView1234"
+                    android:layout_marginLeft="2dp"
+                    android:src="@drawable/withiout_tick" />
+
+                <TextView
+                    android:id="@+id/textView1234"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="ORDER DISPATCHED"
+                    android:textColor="@color/application_common_text"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/enrouteTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/textView1234"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="3dp"
+                    android:layout_toLeftOf="@+id/ivOrderEnroute"
+                    android:text=""
+                    android:textColor="@color/application_common_text"
+                    android:textSize="15sp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/llCOokingDispatched"
+                android:layout_width="fill_parent"
+                android:layout_height="64dp"
+                android:layout_alignLeft="@+id/llCookingFinished"
+                android:layout_below="@+id/llCookingFinished"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/radious_login"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/ivArrived"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignTop="@+id/ivBookaTableq"
+                    android:src="@drawable/withiout_tick" />
+
+                <TextView
+                    android:id="@+id/ivBookaTableq"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="ORDER DELAYED"
+                    android:textColor="@color/application_common_text"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/orderArrivedTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="3dp"
+                    android:layout_toLeftOf="@+id/ivArrived"
+                    android:text=""
+                    android:textColor="@color/application_common_text"
+                    android:textSize="15sp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/llOrderDelivered"
+                android:layout_width="fill_parent"
+                android:layout_height="64dp"
+                android:layout_alignLeft="@+id/llCOokingDispatched"
+                android:layout_below="@id/llCOokingDispatched"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/radious_login" >
+
+                <ImageView
+                    android:id="@+id/ivOrderDelivered"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@+id/ivSignIn"
+                    android:src="@drawable/withiout_tick" />
+
+                <TextView
+                    android:id="@+id/txtSignIn"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="ORDER DELIVERED"
+                    android:textColor="@color/application_common_text"
+                    android:textSize="15sp"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/orderDeliveredTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="3dp"
+                    android:layout_toLeftOf="@+id/ivOrderDelivered"
+                    android:text=""
+                    android:textColor="@color/application_common_text"
+                    android:textSize="15sp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/llOrderAcceptedMessage"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/llOrderDelivered"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/round_color_bg"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/tvOrderStatusMessage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="3dp"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <!--
+            <RelativeLayout
+                android:id="@+id/llOrderPreparedMessage"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/llOrderDelivered"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/round_color_bg"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/tvOrderPreparedMessage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="3dp"
+                    android:padding="5dp"
+                    android:text="@string/ORDERPREPARED"
+                    android:textColor="@color/application_top_header_title_text"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+            -->
+
+
+            <!--
+            <RelativeLayout
+                android:id="@+id/llOrderEnrouteMessage"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/llOrderDelivered"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/round_color_bg"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/tvOrderEnrouteMessage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="3dp"
+                    android:padding="5dp"
+                    android:text="@string/ENROUTE"
+                    android:textColor="@color/application_top_header_title_text"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+            -->
+
+
+            <!--
+            <RelativeLayout
+                android:id="@+id/llOrderOrderArrivedMessage"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/llOrderDelivered"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/round_color_bg"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/tvOrderOrderArrivedMessage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="3dp"
+                    android:padding="5dp"
+                    android:text="@string/ORDERARRIVED"
+                    android:textColor="@color/application_top_header_title_text"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            -->
+            <!--
+            <RelativeLayout
+                android:id="@+id/llOrderdeliverdMessage"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/llOrderDelivered"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/round_color_bg"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/tvllOrderdeliverdMessage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="3dp"
+                    android:padding="5dp"
+                    android:text="@string/ORDERDELIVERED"
+                    android:textColor="@color/application_top_header_title_text"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+            -->
+
+
+            <!--
+            <RelativeLayout
+                android:id="@+id/llOrderCancelMessage"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/llOrderDelivered"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/round_color_bg"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/tvOrderCancelMessage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="3dp"
+                    android:padding="5dp"
+                    android:text="Order Cancel"
+                    android:textColor="@color/application_top_header_title_text"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+            -->
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

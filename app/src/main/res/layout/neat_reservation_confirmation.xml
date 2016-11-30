@@ -1,0 +1,503 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/application_background"
+    android:orientation="vertical"
+    android:padding="0dp" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/rlheader" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/HeaderShow1"
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            android:padding="10dp" >
+
+            <TextView
+                android:id="@+id/tvFirstName"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left|center_vertical"
+                android:text="RESERVATION CONFIRMATION"
+                android:textColor="@color/application_common_text"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/radious_login"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:orientation="horizontal"
+                    android:weightSum="4" >
+
+                    <TextView
+                        android:id="@+id/ordertext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:gravity="left"
+                        android:hint="First Name"
+                        android:paddingLeft="15dp"
+                        android:paddingTop="4dp"
+                        android:textColor="@color/application_common_text"
+                        android:textColorHint="@color/application_text_color_hint"
+                        android:textSize="15sp"
+                        android:textStyle="normal" >
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/etFirstName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:paddingTop="4dp"
+                        android:text="deliferf"
+                        android:textColor="@color/application_common_text"
+                        android:textColorHint="@color/application_text_color_hint"
+                        android:textSize="15sp"
+                        android:textStyle="normal" >
+                    </TextView>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/radious_login"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:orientation="horizontal"
+                    android:weightSum="4" >
+
+                    <TextView
+                        android:id="@+id/fg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:gravity="left"
+                        android:hint="Surname"
+                        android:paddingLeft="15dp"
+                        android:paddingTop="4dp"
+                        android:textColor="@color/application_common_text"
+                        android:textColorHint="@color/application_text_color_hint"
+                        android:textSize="15sp"
+                        android:textStyle="normal" >
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/etLastName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="28dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:paddingTop="4dp"
+                        android:text="deliferf"
+                        android:textColor="@color/application_common_text"
+                        android:textColorHint="@color/application_text_color_hint"
+                        android:textSize="15sp"
+                        android:textStyle="normal" >
+                    </TextView>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/radious_login"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:orientation="horizontal"
+                    android:weightSum="2" >
+
+                    <TextView
+                        android:id="@+id/usrname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:hint="MobileNo"
+                        android:paddingLeft="15dp"
+                        android:paddingTop="4dp"
+                        android:textColor="@color/application_common_text"
+                        android:textColorHint="@color/application_text_color_hint"
+                        android:textSize="15sp"
+                        android:textStyle="normal" >
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/etMobileNo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="32dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:paddingTop="4dp"
+                        android:text="deliferf"
+                        android:textColor="@color/application_common_text"
+                        android:textColorHint="@color/application_text_color_hint"
+                        android:textSize="15sp"
+                        android:textStyle="normal" >
+                    </TextView>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/radious_login"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:orientation="horizontal"
+                    android:weightSum="2" >
+
+                    <TextView
+                        android:id="@+id/emailword"
+                        android:layout_width="wrap_content"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:hint="Email"
+                        android:paddingLeft="15dp"
+                        android:paddingTop="4dp"
+                        android:textColor="@color/application_common_text"
+                        android:textColorHint="@color/application_text_color_hint"
+                        android:textSize="15sp"
+                        android:textStyle="normal" >
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/etEmail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="59dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:paddingTop="4dp"
+                        android:text="deliferf"
+                        android:textColor="@color/application_common_text"
+                        android:textColorHint="@color/application_text_color_hint"
+                        android:textSize="15sp"
+                        android:textStyle="normal" >
+                    </TextView>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="4dp"
+                android:orientation="horizontal"
+                android:weightSum="2" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/radious_login"
+                    android:orientation="horizontal" >
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="45dp"
+                        android:layout_gravity="left"
+                        android:orientation="horizontal"
+                        android:weightSum="4" >
+
+                        <TextView
+                            android:id="@+id/totaltxt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginLeft="2dp"
+                            android:hint="Date"
+                            android:padding="12dp"
+                            android:textColor="@color/application_common_text"
+                            android:textColorHint="@color/application_text_color_hint"
+                            android:textSize="15sp"
+                            android:textStyle="normal" >
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/etxt_fromdate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="4dp"
+                            android:layout_marginTop="15dp"
+                            android:gravity="center"
+                            android:text="26/12/2015"
+                            android:textColor="@color/application_common_text"
+                            android:textColorHint="@color/application_text_color_hint"
+                            android:textSize="15sp"
+                            android:textStyle="normal" >
+                        </TextView>
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/radious_login"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:orientation="horizontal"
+                        android:weightSum="4" >
+
+                        <TextView
+                            android:id="@+id/totaltxt1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="45dp"
+                            android:layout_marginLeft="2dp"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:hint="Time"
+                            android:paddingLeft="12dp"
+                            android:paddingTop="4dp"
+                            android:textColor="@color/application_common_text"
+                            android:textColorHint="@color/application_text_color_hint"
+                            android:textSize="15sp"
+                            android:textStyle="normal" >
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/etxt_fromtime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="45dp"
+                            android:layout_marginLeft="40dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:paddingTop="4dp"
+                            android:text="deliferf"
+                            android:textColor="@color/application_common_text"
+                            android:textColorHint="@color/application_text_color_hint"
+                            android:textSize="15sp"
+                            android:textStyle="normal" >
+                        </TextView>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/radious_login"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:orientation="horizontal"
+                    android:weightSum="4" >
+
+                    <TextView
+                        android:id="@+id/totaltxt2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:hint="Party Size"
+                        android:paddingLeft="15dp"
+                        android:paddingTop="4dp"
+                        android:textColor="@color/application_common_text"
+                        android:textColorHint="@color/application_text_color_hint"
+                        android:textSize="15sp"
+                        android:textStyle="normal" >
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/etPartySize"
+                        android:layout_width="wrap_content"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:paddingTop="4dp"
+                        android:text="deliferf"
+                        android:textColor="@color/application_common_text"
+                        android:textColorHint="@color/application_text_color_hint"
+                        android:textSize="15sp"
+                        android:textStyle="normal" >
+                    </TextView>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="65dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/radious_login"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:orientation="horizontal"
+                    android:weightSum="4" >
+
+                    <TextView
+                        android:id="@+id/totaltxt3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:hint="Notes"
+                        android:paddingLeft="15dp"
+                        android:paddingTop="4dp"
+                        android:textColor="@color/application_common_text"
+                        android:textColorHint="@color/application_text_color_hint"
+                        android:textSize="15sp"
+                        android:textStyle="normal" >
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/etNotes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="58dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:paddingTop="4dp"
+                        android:text="deliferf"
+                        android:textColor="@color/application_common_text"
+                        android:textColorHint="@color/application_text_color_hint"
+                        android:textSize="15sp"
+                        android:textStyle="normal" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/radious_login"
+                android:orientation="horizontal" >
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/footertext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:maxWidth="250dp"
+                android:paddingTop="15dp"
+                android:text="@string/BookreservationFooter"
+                android:textColor="@color/application_common_text"
+                android:textColorHint="@color/application_text_color_hint"
+                android:textSize="15sp"
+                android:textStyle="normal" >
+            </TextView>
+
+            <ImageView
+                android:id="@+id/fbImgg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:onClick="OnFaceBookPress"
+                android:src="@drawable/fb"
+                android:visibility="gone" >
+            </ImageView>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/footer"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="20dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingTop="20dp" >
+
+                <ImageView
+                    android:id="@+id/fbImg"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/facebook"
+                    android:onClick="OnFaceBookPress" />
+
+                <ImageView
+                    android:id="@+id/twitterBtn"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/facebookbtn"
+                    android:layout_weight="1"
+                    android:background="@drawable/twitter_btn"
+                    android:onClick="OnTwitterPress" />
+
+                <ImageView
+                    android:id="@+id/smsBtn"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_below="@+id/facebookbtn"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/sms_btn"
+                    android:onClick="OnSMSUS" />
+
+                <ImageView
+                    android:id="@+id/emailBtn"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_below="@+id/twitterBtn"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/smsBtn"
+                    android:layout_weight="1"
+                    android:background="@drawable/email"
+                    android:onClick="OnMailPress" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

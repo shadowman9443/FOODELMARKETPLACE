@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/menu_home"
+        android:icon="@drawable/burgar"
+        android:showAsAction="always"
+        android:title="@string/home_menu">
+        <menu>
+            <item
+                android:id="@+id/menu_JobQuote"
+                android:icon="@drawable/heart"
+                android:showAsAction="always|withText"
+                android:title="@string/Menu_JobQuote"
+                >
+            </item>
+             <item
+                android:id="@+id/menu_NearBy"
+                android:icon="@drawable/heart"
+                android:showAsAction="always|withText"
+                android:title="@string/Menu_NearBy">
+            </item>
+          <!--   <item
+                android:id="@+id/menu_JobQuoteList"
+                android:icon="@drawable/add_user"
+                android:showAsAction="always|withText"
+                android:title="@string/Menu_JobQuoteList">
+            </item>-->
+            <item
+                android:id="@+id/menu_JobHistory"
+                android:icon="@drawable/heart"
+                android:showAsAction="always|withText"
+                android:title="@string/Menu_JobHistory">
+            </item>
+             
+            <item
+                android:id="@+id/menu_ChangePin"
+                android:icon="@drawable/heart"
+                android:showAsAction="always|withText"
+                android:title="@string/Menu_ChangePin">
+            </item> 
+            <item
+                android:id="@+id/menu_logout"
+                android:icon="@drawable/heart"
+                android:showAsAction="always|withText"
+                android:title="@string/logout_menu">
+            </item>
+        </menu>
+    </item>
+
+</menu>

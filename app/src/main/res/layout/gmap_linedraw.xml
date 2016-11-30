@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/application_background"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="top"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="2dp"
+        android:layout_weight="0.77"
+        android:orientation="vertical" >
+
+        <!-- <fragment
+            android:id="@+id/mapNearbyLine"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            class="com.google.android.gms.maps.MapFragment"
+            android:paddingBottom="5dp" /> -->
+             <com.google.android.gms.maps.MapView
+            android:id="@+id/mapNearbyLine"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnGetDirection"
+        android:layout_width="180dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/round_color_bg"
+        android:drawableLeft="@drawable/up_arrow"
+        android:text="GET DIRECTION"
+        android:textColor="#FFFFFF"
+        android:onClick="GetRoute"
+        android:textSize="15sp" />
+
+</LinearLayout>

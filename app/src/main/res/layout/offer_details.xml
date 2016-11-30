@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/application_background"
+    android:orientation="horizontal" >
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/rlheader" >
+ <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+        android:padding="15dp"
+        android:orientation="horizontal" >
+   <RelativeLayout
+            android:id="@+id/offerDetail"
+            android:layout_width="fill_parent"
+            android:layout_height="380dp"
+            android:background="@drawable/single_item_box"           
+            >
+		<ImageView
+                    android:id="@+id/offerImg"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                     />
+		<ImageView
+                    android:id="@+id/crossOffer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="5dp"
+                    android:onClick="goToOfferPage"
+                    android:background="@drawable/cross_offer_details" />
+              <TextView
+                    android:id="@+id/offerTitle"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="ORDER FOOD"
+                    android:textStyle="bold"
+                    android:layout_alignParentTop="true"
+                   	android:background="@drawable/left_offer1_text_bg"
+                   	android:gravity="left"
+                   	android:padding="5dp"
+                    android:textColor="#FFFFFFFF"
+                    android:textSize="22sp" />
+            <TextView
+                    android:id="@+id/offerDescription"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Food Delivery"
+                   	android:background="@drawable/bottom_plain_offer_text_bg"
+                   	android:gravity="left"
+                   	android:padding="5dp"
+                   	android:visibility="gone"
+                   	android:layout_above="@+id/tcText"
+                    android:textColor="#FFFFFFFF"
+                    android:textSize="12sp" />
+              <TextView
+                    android:id="@+id/tcText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Foodooooooo"
+                   	android:background="@drawable/bottom_both_curve_offer_text_bg"
+                   	android:gravity="left"
+                   	android:padding="5dp"
+                   	android:layout_alignParentBottom="true"
+                    android:textColor="#FFFFFFFF"
+                    android:textSize="12sp" />
+    </RelativeLayout>
+</LinearLayout>
+ </ScrollView>
+</RelativeLayout>

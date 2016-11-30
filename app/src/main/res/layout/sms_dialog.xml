@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    android:background="@color/application_background"
+    android:orientation="vertical" >
+    	    <ImageView
+                    android:id="@+id/crossMessage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/cross_offer_details" />
+    	    <EditText
+                    android:id="@+id/phoneNumber"
+                    android:background="@drawable/radious_login"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Phone No."
+                    android:padding="15dp"
+                    android:inputType="phone"
+                    android:text=""
+                    android:layout_marginTop="10dp"
+					android:layout_below="@+id/crossMessage"
+                    android:textSize="15sp" /> 
+		<EditText
+                    android:id="@+id/sms"
+                    android:background="@drawable/radious_login"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Message"
+                    android:padding="15dp"
+                    android:text=""
+                    android:layout_marginTop="10dp"
+					android:layout_below="@+id/phoneNumber"
+                    android:textSize="15sp" />   
+                    
+ 		 <Button
+        android:id="@+id/sendSMS"
+        android:layout_width="125dp"
+        android:layout_height="45dp"
+		android:gravity="center"
+		android:layout_centerInParent="true"
+       android:layout_below="@+id/sms"
+       	android:layout_marginTop="15dp"
+        android:background="@drawable/place_order"
+        
+        android:text="SEND"
+        android:textColor="#ffffff"
+        android:textSize="15sp" >
+    </Button>	
+</RelativeLayout>

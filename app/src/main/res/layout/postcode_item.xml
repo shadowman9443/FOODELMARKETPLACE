@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="25dp"
+    android:background="@drawable/radious_login"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/llPostcode"
+        android:layout_width="fill_parent"
+        android:layout_height="64dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:weightSum="3" >
+
+        <TextView
+            android:id="@+id/postcode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.01"
+            android:gravity="left"
+            android:textColor="@color/application_common_text"
+            android:text="postcode"
+            android:textSize="15sp" />
+
+     
+
+  
+
+    </LinearLayout>
+
+</RelativeLayout>

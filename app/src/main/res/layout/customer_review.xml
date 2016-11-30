@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/application_background"
+    android:orientation="vertical" >
+
+<!--     <TextView
+        android:id="@+id/tvPuncuality"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        android:text="Puncuality"
+        android:textColor="@color/tvCompany_color"
+        android:textSize="15dp" /> -->
+
+  <!--   <RatingBar
+        android:id="@+id/rbPuncuality"
+        style="@style/foodRatingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:isIndicator="false"
+        android:numStars="5"
+        android:rating="5" />
+
+    <TextView
+        android:id="@+id/tvCleanliness"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        android:text="Cleanliness"
+        android:textColor="@color/tvCompany_color"
+        android:textSize="15dp" />
+
+    <RatingBar
+        android:id="@+id/rbCleanliness"
+        style="@style/foodRatingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:isIndicator="false"
+        android:numStars="6"
+        android:rating="5" />
+
+    <TextView
+        android:id="@+id/tvFriendlyness"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        android:text="Friendlyness"
+        android:textColor="@color/tvCompany_color"
+        android:textSize="15dp" />
+
+    <RatingBar
+        android:id="@+id/rbFriendlyness"
+        style="@style/foodRatingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:isIndicator="false"
+        android:numStars="6"
+        android:rating="5" />
+
+    <TextView
+        android:id="@+id/tvRoadKnowledge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        android:text="Road Knowledge"
+        android:textColor="@color/tvCompany_color"
+        android:textSize="15dp" />
+
+    <RatingBar
+        android:id="@+id/rbRoadKnowledge"
+        style="@style/foodRatingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:isIndicator="false"
+        android:numStars="6"
+        android:rating="5" />
+ -->
+ 
+    
+    
+    
+    
+
+    <TextView
+        android:id="@+id/tvLoginInformation"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:text="Comment"
+        android:textColor="@color/application_common_text"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/etRemarks"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/inputbox_bg"
+        android:gravity="top|left"
+        android:inputType="textCapSentences|textMultiLine"
+        android:lines="4"
+        android:scrollbars="vertical" />
+
+</LinearLayout>

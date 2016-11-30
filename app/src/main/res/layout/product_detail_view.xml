@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+ <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/rlheader" >
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#ffffff"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/rldriverinfo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rlheader"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="10dp" >
+
+            <RelativeLayout
+                android:id="@+id/rlheader1"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="70dp"
+                android:background="@drawable/single_item_box"
+                android:orientation="vertical"
+                android:padding="20dp" >
+
+                <TextView
+                    android:id="@+id/tvProductName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:text=""
+                    android:textColor="@color/application_title_common_text"
+                    android:textSize="15sp" />
+
+                <FrameLayout
+                    android:id="@+id/singleItemImg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="30dp" >
+
+                    <com.android.volley.toolbox.NetworkImageView
+                        android:id="@+id/getstartedfour1"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                         />
+
+                    <LinearLayout
+                        android:id="@+id/alergimoniclayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="bottom|right"
+                        android:gravity="right"
+                        android:orientation="horizontal"
+                        android:weightSum="3" >
+
+                        <TextView
+                            android:id="@+id/vImage"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginLeft="2dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/round_v_n_g"
+                            android:contentDescription="@string/app_name"
+                            android:gravity="center"
+                            android:text="V"
+                            android:textColor="#FFFFFF"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:visibility="gone" >
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/nImage"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginLeft="2dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/round_v_n_g"
+                            android:contentDescription="@string/app_name"
+                            android:gravity="center"
+                            android:text="N"
+                            android:textColor="#FFFFFF"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:visibility="gone" >
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/gImage"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginLeft="2dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/round_v_n_g"
+                            android:contentDescription="@string/app_name"
+                            android:gravity="center"
+                            android:text="G"
+                            android:textColor="#FFFFFF"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:visibility="gone"
+                         >
+                        </TextView>
+                    </LinearLayout>
+                </FrameLayout>
+
+                <RelativeLayout
+                    android:id="@+id/detailText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/singleItemImg"
+                    android:layout_alignParentBottom="true"
+                    android:layout_below="@+id/singleItemImg"
+                    android:layout_centerHorizontal="true"
+                    android:orientation="horizontal" >
+
+                    <com.dgtech.neat.utils.JustifiedTextView
+                        android:id="@+id/tvProductDetails"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxWidth="200dp"
+                        android:maxLines="3"
+                        android:paddingRight="5dp"
+                        android:text=""
+                        android:textColor="@color/application_common_text"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+            </RelativeLayout>
+            <Button
+                    android:id="@+id/btnSubmit"
+                    android:layout_width="125dp"
+                    android:layout_height="45dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/radious_button_close"
+                    android:onClick="onClosePress"
+                    android:text="CLOSE"
+                    android:textAlignment="center"
+                    android:textColor="@color/application_top_header_title_text"
+                    android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rldriverinfo"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/tvAverageRate"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="Selling Price"
+                android:textColor="@color/application_common_text"
+                android:textSize="15dp" />
+
+            <EditText
+                android:id="@+id/etSellingPrice"
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:background="@drawable/inputbox_bg"
+                android:enabled="false"
+                android:inputType="number"
+                android:textColor="#000000"
+                android:textCursorDrawable="@null"
+                android:textSize="15dp"
+                android:textStyle="normal" >
+            </EditText>
+
+            <TextView
+                android:id="@+id/tvQty"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="Qty"
+                android:textColor="@color/application_common_text"
+                android:textSize="15dp" />
+
+            <EditText
+                android:id="@+id/etQty"
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:background="@drawable/inputbox_bg"
+                android:inputType="number"
+                android:textColor="#000000"
+                android:textCursorDrawable="@null"
+                android:textSize="15dp"
+                android:textStyle="normal" >
+            </EditText>
+
+            <TextView
+                android:id="@+id/tvTotal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="Total"
+                android:textColor="@color/application_common_text"
+                android:textSize="15dp" />
+
+            <EditText
+                android:id="@+id/etTotal"
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:background="@drawable/inputbox_bg"
+                android:inputType="number"
+                android:textColor="#000000"
+                android:textCursorDrawable="@null"
+                android:textSize="15dp"
+                android:textStyle="normal" >
+            </EditText>
+
+            <TextView
+                android:id="@+id/tvComments"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="Comments"
+                android:textColor="@color/application_common_text"
+                android:textSize="15dp" />
+
+            <EditText
+                android:id="@+id/etComments"
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:background="@drawable/inputbox_bg"
+                android:inputType="textMultiLine"
+                android:textColor="#000000"
+                android:textCursorDrawable="@null"
+                android:textSize="15dp"
+                android:textStyle="normal" >
+            </EditText>
+
+            <TextView
+                android:id="@+id/tvPuncuality"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="Product Rating"
+                android:textColor="@color/application_common_text"
+                android:textSize="15sp" />
+
+            <RatingBar
+                android:id="@+id/rbproductRating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:isIndicator="false"
+                android:numStars="5"
+                android:rating="5" />
+
+            <Button
+                android:id="@+id/btnSpicy"
+                android:layout_width="111dp"
+                android:layout_height="25dp"
+                android:layout_gravity="left"
+                android:layout_weight="0.36"
+                android:background="#836F6F"
+                android:onClick="onSpicy"
+                android:text="Spicy choice"
+                android:textColor="#FFFFFF"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lvCountryCode"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:paddingTop="8dp"
+            android:visibility="gone"
+            android:weightSum="2" >
+
+            <Button
+                android:id="@+id/btnSubmihjt"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="#836F6F"
+                android:onClick="onSendJobRequest"
+                android:text="Add To Cart"
+                android:textColor="#FFFFFF"
+                android:textSize="15dp" />
+
+            <Button
+                android:id="@+id/btnCancel"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:background="#836F6F"
+                android:onClick="onCancel"
+                android:text="Cancel"
+                android:textColor="#FFFFFF"
+                android:textSize="15dp" />
+        </LinearLayout>
+    </RelativeLayout>
+ </ScrollView>
+</RelativeLayout>
