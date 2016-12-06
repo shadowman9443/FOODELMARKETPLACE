@@ -49,6 +49,7 @@
             android:layout_alignParentRight="true"
             android:layout_below="@+id/imgRest"
             android:layout_marginRight="15dp"
+            android:id="@+id/restText"
             android:text="Restaurent"
             android:textSize="9sp" />
     </RelativeLayout>
@@ -60,7 +61,7 @@
         android:layout_above="@+id/HeaderShow1"
         android:layout_below="@+id/rlheader"
         android:clickable="true"
-        android:onClick="btnCreateView_clicked">
+      >
 
         <LinearLayout
             android:id="@+id/menu_li"

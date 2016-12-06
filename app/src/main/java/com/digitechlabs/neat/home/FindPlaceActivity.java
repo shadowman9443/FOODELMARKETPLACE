@@ -29,9 +29,9 @@ public class FindPlaceActivity extends Activity {
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);*/
         setContentView(R.layout.activity_find_places);
         findPlace= (Button) findViewById(R.id.btnFindPLace);
-        bookTabletxt= (TextView) findViewById(R.id.txtBokTbl);
+        rlbookTbl= (RelativeLayout) findViewById(R.id.relBoktbl);
         ordertaketxt= (TextView) findViewById(R.id.txtOrderTake);
-
+        relordederTke= (RelativeLayout) findViewById(R.id.relOrdTake);
         findPlace.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -39,14 +39,21 @@ public class FindPlaceActivity extends Activity {
                 startActivity(intent);
             }
         });
-  /*      bookTabletxt.setOnClickListener(new View.OnClickListener() {
+       rlbookTbl.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(getApplicationContext(),CardPaymentActivity.class);
+                Intent intent=new Intent(getApplicationContext(),SettingActivity.class);
                 startActivity(intent);
             }
         });
-        ordertake.setOnClickListener(new View.OnClickListener() {
+        relordederTke.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(getApplicationContext(),AddLocationActivity.class);
+                startActivity(intent);
+            }
+        });
+    /*    ordertake.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent=new Intent(getApplicationContext(),OrderConfirmationActivity.class);

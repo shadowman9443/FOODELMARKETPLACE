@@ -50,7 +50,7 @@ public class HeaderFooterActivity extends AppCompatActivity
 		implements Observer, OnClickListener, OnTouchListener, OnItemSelectedListener, OnItemClickListener {
 	RelativeLayout linBase;
 	LocalListingApplication myBase;
-	TextView priceText, txthome, txtMEnu, txtcheckout, txtctellfriend;
+	TextView priceText, txthome, txtMEnu, txtcheckout, txtctellfriend,restaurentSearch,backArroow,restaurentText;
 	Context ctx;
 	Activity currActivity;
 	ArrayList<CustomerShoppingCart> shoppingCart;
@@ -120,6 +120,9 @@ public class HeaderFooterActivity extends AppCompatActivity
 		txtctellfriend = (TextView) findViewById(R.id.txtctellfriend);
 		rlheader = (RelativeLayout) findViewById(R.id.rlheader);
 		menu_li = (LinearLayout) findViewById(R.id.menu_li);
+		restaurentSearch= (TextView) findViewById(R.id.imgRest);
+		backArroow= (TextView) findViewById(R.id.backarrow);
+		restaurentText = (TextView) findViewById(R.id.restText);
 
 
 

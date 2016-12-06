@@ -95,7 +95,5 @@ public class RestaurentListActivity extends HeaderFooterActivity{
 
         return super.onOptionsItemSelected(item);
     }
-    public void btnCreateView_clicked(View v){
 
-    }
 }
