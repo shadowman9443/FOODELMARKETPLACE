@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_restaurent_menu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.digitechlabs.neat.home.RestaurentActivityMenu">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/restDetailimageRel"
+        android:padding="17dp">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+            >
+            <ImageView
+                android:id="@+id/restInfoImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:src="@drawable/belogo" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:layout_centerHorizontal="true"
+
+        android:layout_marginLeft="20dp"
+        android:orientation="vertical"
+        android:id="@+id/restDetailnameandreviewRel"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13dp"
+            android:text="Bangkok Eatery"
+            android:layout_marginTop="3dp"
+            android:textColor="#000"
+            android:id="@+id/bangEat"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thai"
+            android:textSize="10sp"
+            android:textColor="#939393"
+            android:layout_marginTop="8dp"
+            android:layout_below="@+id/bangEat"
+            android:id="@+id/placeName"
+            />
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/placeName"
+            android:layout_marginTop="10dp">
+            <RatingBar
+                android:id="@+id/valueformoneyRating"
+                style="@style/starRatingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="9.5dp"
+                android:numStars="5"
+                android:stepSize=".50"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/valueformoneyRating"
+                android:id="@+id/txtreview"
+                android:textColor="#939393"
+                android:textSize="10sp"
+                android:paddingLeft="3dp"
+                android:text="(56)"
+
+                />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:id="@+id/restDetailoffersanddistRel"
+        android:layout_marginRight="10dp"
+        android:padding="8dp"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/relOptionsoffrs"
+            android:layout_marginTop="1dp"
+            android:layout_gravity="right"
+            >
+            <ImageView
+                android:id="@+id/imageBike"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/bike"
+                android:padding="1dp"
+                />
+            <ImageView
+                android:id="@+id/imagehalal"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+
+                android:padding="1dp"
+                android:src="@drawable/halal"
+                />
+            <ImageView
+                android:id="@+id/imageStar"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:padding="1dp"
+                android:src="@drawable/star" />
+            <ImageView
+                android:id="@+id/imagechtb"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:padding="1dp"
+                android:src="@drawable/chtb" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/reviewRel"
+            android:layout_below="@+id/relOptionsoffrs"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                android:text="1.2 Mile"
+                android:textColor="#939393"
+                android:layout_marginTop="6dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                android:text="Min Order £15.00"
+                android:textColor="#939393"
+                android:layout_marginTop="6dp"
+
+                />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/restDetailheadRel"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@drawable/grey_radious"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/restDetailnameandreviewRel"
+        android:layout_centerHorizontal="true">
+
+        <RelativeLayout
+            android:id="@+id/relMenu"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:clickable="true"
+
+            android:orientation="vertical" >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Menu"
+                android:id="@+id/txtMenu"
+                android:textSize="15sp"
+                android:fontFamily="sans-serif-light"
+                android:layout_centerInParent="true"/>
+
+
+        </RelativeLayout>
+        <View
+            android:id="@+id/dividerloine"
+            android:layout_width="0.5dp"
+
+            android:layout_height="match_parent"
+
+            android:layout_gravity="center"
+            android:background="@color/grey" />
+
+        <RelativeLayout
+            android:id="@+id/relReview"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:onClick="review"
+            android:orientation="vertical" >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reviews"
+                android:id="@+id/txtReview"
+                android:textSize="15sp"
+                android:fontFamily="sans-serif-light"
+                android:layout_centerInParent="true"/>
+
+
+
+        </RelativeLayout>
+        <View
+            android:id="@+id/dividerloinescnd"
+            android:layout_width="0.5dp"
+
+            android:layout_height="match_parent"
+
+            android:layout_gravity="center"
+            android:background="@color/grey" />
+        <RelativeLayout
+            android:id="@+id/relInfo"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:onClick="info"
+            android:orientation="vertical" >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="Info"
+                android:id="@+id/txtInfo"
+                android:fontFamily="sans-serif-light"
+                android:textSize="15sp"
+                android:layout_centerInParent="true"/>
+
+
+
+
+        </RelativeLayout>
+    </LinearLayout>
+    <ListView
+        android:id="@+id/menuList"
+        android:layout_below="@+id/restDetailheadRel"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>
